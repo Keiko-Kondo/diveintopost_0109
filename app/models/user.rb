@@ -8,6 +8,8 @@ class User < ApplicationRecord
   has_many :articles, dependent: :destroy
   has_many :agendas, dependent: :destroy
   has_many :comments, dependent: :destroy
+  has_many :favorites, dependent: :destroy
+  has_many :favorite_articles, through: :favorites, source: :article
 
   belongs_to :keep_team, optional: true, class_name: 'Team', foreign_key: :keep_team_id
 
