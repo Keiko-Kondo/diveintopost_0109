@@ -12,6 +12,7 @@ class ArticlesController < ApplicationController
     @comment = @article.comments.build
     @working_team = @article.team
     change_keep_team(current_user, @working_team)
+    @favorite = current_user.favorites.find_by(article_id: @article.id)
   end
 
   def new
