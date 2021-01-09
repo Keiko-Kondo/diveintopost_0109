@@ -17,6 +17,10 @@ gem 'jquery-rails'
 gem 'redcarpet', '~> 2.3.0'
 gem 'sass-rails', '~> 5.0'
 gem 'webpacker', '~> 3.5'
+gem 'kaminari'
+gem 'kaminari-bootstrap'
+
+
 
 # Backend
 gem 'carrierwave'
